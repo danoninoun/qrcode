@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>QR Code Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>QR Code Generator</h1>
-        <input type="text" id="urlInput" placeholder="Enter URL">
+        <input type="text" id="urlInput" placeholder="Enter URL" autocorrect="off">
         <button id="generateBtn">Generate QR Code</button>
         <div id="qrcode"></div>
         <a id="downloadBtn" style="display:none;">Download QR Code</a>
