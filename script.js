@@ -13,6 +13,10 @@ document.getElementById('generateBtn').addEventListener('click', function() {
         // Wait for the QR code to be generated
         setTimeout(function() {
             var canvas = qrcodeContainer.getElementsByTagName('canvas')[0];
+            if (canvas) {
+                canvas.style.display = 'block';
+                canvas.style.margin = 'auto';
+            }
             var downloadBtn = document.getElementById('downloadBtn');
             downloadBtn.href = canvas.toDataURL('image/png');
             downloadBtn.download = 'qrcode.png';
